@@ -1,0 +1,12 @@
+<% content_for :content do %>
+  <section id = "topics">
+    <ul class="list">
+      <% @topics.each do |topic| %>
+        <li data-url-key="<%= topic.urlkey %>">
+          <span class="name"><%= topic.name %></span>
+          <span class="description"><%= topic.description %></span>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>

@@ -1,0 +1,5 @@
+.page { margin-top: 45px; }
+#topics .search {float: right;}
+#topics ul.list { list-style: none; clear: both; }
+ul.list li { border-bottom: solid 1px #DDDDDD; padding: 10px; }
+ul.list span.name { font-weight: bold; }
