@@ -1,4 +1,6 @@
 <% content_for :content do %>
+  <section id="events">
+  </section>
   <section id = "topics">
     <ul class="list">
       <% @topics.each do |topic| %>
@@ -9,4 +11,8 @@
       <% end %>
     </ul>
   </section>
+<% end %>
+
+<% content_for :javascript do %>
+  <script type="text/javascript" src="/js/app.js"></script>
 <% end %>

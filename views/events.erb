@@ -1,0 +1,26 @@
+<h3>Events</h3>
+<ul>
+  <% if @events.empty? %>
+    <div class="well">
+      Currently there are no events for this topic
+    </div>
+  <% end %>
+  <% @events.each do |event| %>
+    <li>
+      <ul class="well">
+        <li class="name">
+          <span class="name">Event Name</span>
+          <span class="value"><%= event.name %></span>
+        </li>
+        <li>
+          <span class="name">Venue Name</span>
+          <span class="value"><%= event.venue_name %></span>
+        </li>
+        <li>
+          <span class="name">Date &amp; Time</span>
+          <span class="value"><%= event.time %></span>
+        </li>
+      </ul>
+    </li>
+  <% end %>
+</ul>

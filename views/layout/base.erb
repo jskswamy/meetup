@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="/css/app.css" />
   <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/list.min.js"></script>
-  <% yield_content :javascript %>
 </head>
 <body>
   <div class="navbar navbar-fixed-top">
@@ -24,5 +22,6 @@
   <div class="page container">
     <% yield_content :content %>
   </div>
+  <% yield_content :javascript %>
 </body>
 </html>

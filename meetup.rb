@@ -16,8 +16,17 @@ post '/topics' do
   with_base_layout :topics
 end
 
+get '/events/:topic_url_key' do
+  @events = RMeetup::Client.fetch(:events, {:topic => params[:topic_url_key], :order => 'group'})
+  without_layout :events
+end
+
 private
 
 def with_base_layout template, options = {}
   erb template, options.merge(:layout => :'layout/base')
+end
+
+def without_layout template
+  erb template
 end

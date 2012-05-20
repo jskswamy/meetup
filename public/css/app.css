@@ -1,5 +1,15 @@
-.page { margin-top: 45px; }
+.page {margin-top: 45px; }
+#events {float: right; width: 300px;}
+#topics { margin-right: 300px; border-right: solid 5px #F5F5F5;}
 #topics .search {float: right;}
-#topics ul.list { list-style: none; clear: both; }
-ul.list li { border-bottom: solid 1px #DDDDDD; padding: 10px; }
-ul.list span.name { font-weight: bold; }
+#topics ul.list {list-style: none;}
+#topics ul.list li.current{background-color: #F5F5F5; }
+#topics ul.list li {cursor: pointer;}
+ul.list li {border-bottom: solid 1px #DDDDDD; padding: 10px;}
+ul.list span.name {font-weight: bold;}
+
+#events h3 { padding-left: 12px; background-color: #F5F5F5; margin-bottom: 10px;}
+#events ul { list-style: none;}
+#events ul { margin-left: 5px; padding: 2px;}
+#events ul:first-child > li { padding: 5px;}
+#events ul:first-child > li span.name {font-weight: bold;}
